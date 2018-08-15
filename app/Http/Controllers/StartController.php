@@ -39,4 +39,8 @@ class StartController extends Controller
         ];
 
     }
+
+    public function newEvent(Request $request) {
+
+    }
 }
