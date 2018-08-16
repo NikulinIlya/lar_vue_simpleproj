@@ -20,6 +20,7 @@ Vue.component('prop-component', require('./components/PropComponent.vue'));
 Vue.component('ajax-component', require('./components/AjaxComponent.vue'));
 Vue.component('chartline-component', require('./components/ChartlineComponent.vue'));
 Vue.component('chartrandom-component', require('./components/ChartrandomComponent.vue'));
+Vue.component('socket-component', require('./components/SocketComponent.vue'));
 
 const app = new Vue({
     el: '#app'
