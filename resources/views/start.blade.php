@@ -16,6 +16,7 @@
                     <a type="button" class="btn btn-secondary" href="#4">ChartJS (Line) & VueJS *ajax</a>
                     <a type="button" class="btn btn-secondary" href="#5">ChartJS (Line) & VueJS *ajax+trigger+reload</a>
                     <a type="button" class="btn btn-secondary" href="#6">Realtime ChartJS (Line) & VueJS *ajax+trigger+reload</a>
+                    <a type="button" class="btn btn-secondary" href="#7">Realtime Chat VueJS *ajax+trigger+reload</a>
                 </div>
             </div>
         </div>
@@ -74,6 +75,16 @@
                             <div class="card-body" style="min-height: 300px;">
                                 <h2 class="text-center">#6 Realtime ChartJS (Line) & VueJS *ajax+trigger+reload</h2>
                                 <socket-component></socket-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2" data-hash="7" id="7">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 300px;">
+                                <h2 class="text-center">#7 Realtime Chat VueJS *ajax+trigger+reload</h2>
+                                <socket-chat-component></socket-chat-component>
                             </div>
                         </div>
                     </div>

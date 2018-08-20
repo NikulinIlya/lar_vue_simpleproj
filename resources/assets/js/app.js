@@ -21,6 +21,7 @@ Vue.component('ajax-component', require('./components/AjaxComponent.vue'));
 Vue.component('chartline-component', require('./components/ChartlineComponent.vue'));
 Vue.component('chartrandom-component', require('./components/ChartrandomComponent.vue'));
 Vue.component('socket-component', require('./components/SocketComponent.vue'));
+Vue.component('socket-chat-component', require('./components/SocketChatComponent.vue'));
 
 const app = new Vue({
     el: '#app'
