@@ -97,4 +97,9 @@ class StartController extends Controller
     public function sendMessage(Request $request) {
         event(new \App\Events\NewMessage($request->input('message')));
     }
+
+    public function sendPrivateMessage(Request $request) {
+        \App\Events\PrivateMessage::dispatch($request->all());
+        return $request->all();
+    }
 }

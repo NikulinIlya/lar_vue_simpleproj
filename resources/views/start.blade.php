@@ -17,6 +17,7 @@
                     <a type="button" class="btn btn-secondary" href="#5">ChartJS (Line) & VueJS *ajax+trigger+reload</a>
                     <a type="button" class="btn btn-secondary" href="#6">Realtime ChartJS (Line) & VueJS *ajax+trigger+reload</a>
                     <a type="button" class="btn btn-secondary" href="#7">Realtime Chat VueJS *ajax+trigger+reload</a>
+                    <a type="button" class="btn btn-secondary" href="#8">Realtime Chat Private VueJS *ajax+trigger+reload</a>
                 </div>
             </div>
         </div>
@@ -85,6 +86,20 @@
                             <div class="card-body" style="min-height: 300px;">
                                 <h2 class="text-center">#7 Realtime Chat VueJS *ajax+trigger+reload</h2>
                                 <socket-chat-component></socket-chat-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2" data-hash="8" id="8">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 300px;">
+                                <h2 class="text-center">#8 Realtime Chat Private VueJS *ajax+trigger+reload</h2>
+                                @if (Auth::check())
+                                    <h4 class="text-center">пользователь: {{ Auth::user()->email }}</h4>
+                                    <socket-private-component :users="{{ \App\User::select('email', 'id')->
+                                    where('id', '!=', Auth::id())->get()}}" :user="{{ Auth::user() }}"></socket-private-component>
+                                    @endif
                             </div>
                         </div>
                     </div>
